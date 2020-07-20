@@ -1,0 +1,98 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+@include font('Caviar Dreams', '../fonts/CaviarDreams');
+@include font('Caviar Dreams Bold', '../fonts/CaviarDreams_Bold');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+body {
+    background: $color-primary;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .navbar-brand {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    .navbar-brand-center {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .nav-item {
+
+        &.active .nav-link {
+            border-bottom: 1px solid $color-accent;
+            border-bottom-style: double;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            letter-spacing: 3px;
+            color: #fff !important;
+            font-family: 'Open Sans Condensed', sans-serif !important;
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    background: #121212;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+
+    .footer-title {
+        color: $color-accent;
+        font-family: 'Caviar Dreams Bold', sans-serif;
+        font-size: 20px;
+    }
+
+    hr {
+        background: $color-accent;
+        width: 5%;
+        margin: 20px auto;
+    }
+
+    .footer-schedules {
+        font-size: 14px;
+
+        .highlight {
+            color: $color-accent;
+        }
+    }
+
+    .footer-socialmedia {
+        .btn {
+            border-bottom: 1px solid $color-accent;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}
+
+.modal-body {
+    background: $color-primary;
+}

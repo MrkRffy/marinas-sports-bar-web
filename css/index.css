@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("../fonts/CaviarDreams_Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+body {
+  background: #181619;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+@media (min-width: 992px) {
+  header .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar-brand-center {
+    display: none;
+  }
+}
+header .nav-item.active .nav-link {
+  border-bottom: 1px solid #FF7D0F;
+  border-bottom-style: double;
+}
+header .nav-item .nav-link {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #fff !important;
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+/* FOOTER */
+footer {
+  background: #121212;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+footer .footer-title {
+  color: #FF7D0F;
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 20px;
+}
+footer hr {
+  background: #FF7D0F;
+  width: 5%;
+  margin: 20px auto;
+}
+footer .footer-schedules {
+  font-size: 14px;
+}
+footer .footer-schedules .highlight {
+  color: #FF7D0F;
+}
+footer .footer-socialmedia .btn {
+  border-bottom: 1px solid #FF7D0F;
+  color: #fff;
+  border-radius: 0;
+}
+
+.modal-body {
+  background: #181619;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miniver&display=swap");
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("../fonts/CaviarDreams.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caviar Dreams Bold";
+  src: url("../fonts/CaviarDreams_Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+body {
+  background: #181619;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+@media (min-width: 992px) {
+  header .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar-brand-center {
+    display: none;
+  }
+}
+header .nav-item.active .nav-link {
+  border-bottom: 1px solid #FF7D0F;
+  border-bottom-style: double;
+}
+header .nav-item .nav-link {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #fff !important;
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+/* FOOTER */
+footer {
+  background: #121212;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+footer .footer-title {
+  color: #FF7D0F;
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 20px;
+}
+footer hr {
+  background: #FF7D0F;
+  width: 5%;
+  margin: 20px auto;
+}
+footer .footer-schedules {
+  font-size: 14px;
+}
+footer .footer-schedules .highlight {
+  color: #FF7D0F;
+}
+footer .footer-socialmedia .btn {
+  border-bottom: 1px solid #FF7D0F;
+  color: #fff;
+  border-radius: 0;
+}
+
+.modal-body {
+  background: #181619;
+}
+
+.banner-container .carousel .carousel-item {
+  display: flex;
+  align-items: center;
+}
+.banner-container .carousel .carousel-item img {
+  object-fit: cover;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.banner-container .carousel .carousel-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.banner-container .carousel .carousel-caption {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  left: 0;
+  top: 0;
+}
+.banner-container .carousel .carousel-caption .caption-content .caption-header {
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.banner-container .carousel .carousel-caption .caption-content hr {
+  background: #FF7D0F;
+  width: 20%;
+  margin: 10px auto;
+}
+.banner-container .carousel .carousel-caption .caption-content p {
+  font-size: 20px;
+}
+
+.about-container,
+.specialties-container,
+.gallery-container {
+  color: #C9AB81;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about-container .container-superscript,
+.specialties-container .container-superscript,
+.gallery-container .container-superscript {
+  color: #C9AB81;
+  font-family: "Miniver", cursive;
+  font-size: 19px;
+}
+.about-container .container-title,
+.specialties-container .container-title,
+.gallery-container .container-title {
+  font-family: "Caviar Dreams Bold", sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.22em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container .container-title.small,
+.specialties-container .container-title.small,
+.gallery-container .container-title.small {
+  font-size: 40px;
+}
+
+.about-container {
+  overflow: hidden;
+}
+.about-container .about-content img {
+  object-fit: cover;
+}
+.about-container .about-content hr {
+  background: #FF7D0F;
+  width: 20%;
+  margin: 10px auto;
+}
+.about-container .about-content .content-title {
+  font-weight: bold;
+  font-size: 35px;
+}
+.about-container .about-content .content-body .content-image {
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid #C9AB81;
+  cursor: help;
+}
+.about-container .about-content .content-body .content-image img {
+  width: 35px;
+}
+.about-container .about-content .content-footer button {
+  background: #C9AB81;
+  font-weight: bold;
+}
+
+.specialties-container {
+  background: #0F1D22;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.specialties-container .carousel .carousel-item img {
+  height: 750px;
+  object-fit: cover;
+}
+.specialties-container .padding-large {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.specialties-container .container-content {
+  padding: 0px 200px;
+  letter-spacing: 2px;
+  font-size: 19px;
+  font-weight: 300;
+}
+.specialties-container hr {
+  background: #FF7D0F;
+  width: 5%;
+  margin: 10px auto;
+}
+.specialties-container .container-footer button {
+  background: transparent;
+  border: 1px solid #C9AB81;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif !important;
+  font-size: 14px;
+  letter-spacing: 4px;
+  transition: color 0.5s, background 0.5s;
+}
+.specialties-container .container-footer button:hover {
+  background: #C9AB81;
+  color: #0F1D22;
+}
+
+.gallery-container {
+  overflow: hidden;
+}
+.gallery-container .content-footer button {
+  background: #C9AB81;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=landing.css.map */
