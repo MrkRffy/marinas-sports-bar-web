@@ -19,6 +19,7 @@
   margin: 0;
   outline: none;
   letter-spacing: 1px;
+  outline: none;
 }
 
 body {
@@ -82,6 +83,14 @@ footer .footer-socialmedia .btn {
   border-bottom: 1px solid #FF7D0F;
   color: #fff;
   border-radius: 0;
+  width: 120px;
+}
+footer .footer-designed-by {
+  font-size: 12px;
+  padding: 10px;
+}
+footer .footer-designed-by a {
+  color: #FF7D0F;
 }
 
 .modal-body {
@@ -105,7 +114,7 @@ footer .footer-socialmedia .btn {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .banner-container .carousel .carousel-caption {
   width: 100%;
@@ -126,6 +135,12 @@ footer .footer-socialmedia .btn {
 }
 .banner-container .carousel .carousel-caption .caption-content p {
   font-size: 20px;
+}
+.banner-container .carousel .carousel-caption .caption-content p span {
+  margin: 5px;
+}
+.banner-container .carousel .carousel-caption .caption-content p span:nth-child(even) {
+  color: #FF7D0F;
 }
 
 .about-container,
@@ -228,6 +243,9 @@ footer .footer-socialmedia .btn {
 
 .gallery-container {
   overflow: hidden;
+}
+.gallery-container .container-content img {
+  object-fit: cover;
 }
 .gallery-container .content-footer button {
   background: #C9AB81;

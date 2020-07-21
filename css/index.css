@@ -19,6 +19,7 @@
   margin: 0;
   outline: none;
   letter-spacing: 1px;
+  outline: none;
 }
 
 body {
@@ -82,6 +83,14 @@ footer .footer-socialmedia .btn {
   border-bottom: 1px solid #FF7D0F;
   color: #fff;
   border-radius: 0;
+  width: 120px;
+}
+footer .footer-designed-by {
+  font-size: 12px;
+  padding: 10px;
+}
+footer .footer-designed-by a {
+  color: #FF7D0F;
 }
 
 .modal-body {
