@@ -142,4 +142,35 @@ footer .footer-designed-by a {
   background: #181619;
 }
 
-/*# sourceMappingURL=index.css.map */
+.events-container {
+  background: #0F1D22;
+}
+.events-container .event-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #121212;
+  transition: all 0.2s ease;
+}
+.events-container .event-item .event-image img {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.events-container .event-item .event-info .event-name {
+  color: #C9AB81;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.events-container .event-item .event-info .event-description {
+  color: #fff !important;
+  font-size: 14px;
+  max-height: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.events-container .event-item:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=events.css.map */

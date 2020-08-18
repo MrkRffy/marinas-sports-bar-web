@@ -1,0 +1,24 @@
+@import "./index.scss";
+
+.gallery-container {
+    background: $color-secondary;
+
+    .gallery-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background: $color-dark;
+        transition: all .2s ease;
+
+        .gallery-image {
+            img {
+                height: 350px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

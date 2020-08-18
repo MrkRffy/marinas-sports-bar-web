@@ -1,0 +1,64 @@
+@import "./index.scss";
+
+.contacts-container {
+    background: linear-gradient(to bottom, $color-dark 50%, $color-secondary 50%);
+
+    .contact-item {
+        background: $color-primary;
+        box-shadow: 0px 0px 10px rgba($color-accent, .1);
+        border-radius: 20px;
+        height: 100%;
+
+        .contact-item-name {
+            color: $color-accent;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .contact-item-value {
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-form-container {
+    background: $color-secondary;
+
+    .row {
+        background: $color-primary;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    color: #fff;
+
+    input,
+    select,
+    textarea {
+        background: $color-dark;
+        border: none;
+        color: #fff;
+    }
+}
+
+.container-superscript {
+    color: $color-accent;
+    font-family: 'Miniver', cursive;
+    font-size: 19px;
+}
+
+.container-title {
+    font-family: 'Caviar Dreams Bold', sans-serif;
+    font-size: 40px;
+    letter-spacing: .22em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $color-accent;
+
+    &.small {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,77 @@
+@import "./index.scss";
+
+.about-container {
+    background: linear-gradient(to bottom, $color-dark 50%, $color-secondary 50%);
+
+    .row {
+        background: $color-primary;
+        box-shadow: 0px 0px 10px rgba($color-accent, .1);
+    }
+}
+
+.container-superscript {
+    color: $color-accent;
+    font-family: 'Miniver', cursive;
+    font-size: 19px;
+}
+
+.container-title {
+    font-family: 'Caviar Dreams Bold', sans-serif;
+    font-size: 40px;
+    letter-spacing: .22em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $color-accent;
+
+    &.small {
+        font-size: 35px;
+    }
+}
+
+.testimonials-container {
+    background: $color-secondary;
+
+    .carousel {
+        padding-bottom: 60px;
+    }
+
+    .testimonial-item {
+        border-radius: 20px;
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .testimonial-title {
+            color: $color-accent;
+            font-size: 25px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-subtitle {
+            color: $color-accent;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .testimonial-content {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+
+            span {
+                width: 800px;
+                max-width: 100%;
+            }
+        }
+    }
+}

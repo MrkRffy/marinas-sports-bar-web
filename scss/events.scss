@@ -1,0 +1,41 @@
+@import "./index.scss";
+
+.events-container {
+    background: $color-secondary;
+
+    .event-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background: $color-dark;
+        transition: all .2s ease;
+
+        .event-image {
+            img {
+                height: 400px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .event-info {
+            .event-name {
+                color: $color-accent;
+                font-size: 20px;
+                letter-spacing: 2px;
+                font-weight: 700;
+            }
+
+            .event-description {
+                color: #fff !important;
+                font-size: 14px;
+                max-height: 150px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

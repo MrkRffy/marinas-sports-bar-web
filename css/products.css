@@ -142,4 +142,32 @@ footer .footer-designed-by a {
   background: #181619;
 }
 
-/*# sourceMappingURL=index.css.map */
+.products-container {
+  background: #0F1D22;
+}
+.products-container .product-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #121212;
+  transition: all 0.2s ease;
+}
+.products-container .product-item .product-image img {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.products-container .product-item .product-info .product-name {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.products-container .product-item .product-info .product-price {
+  color: #C9AB81;
+  font-size: 20px;
+  font-weight: 700;
+}
+.products-container .product-item:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=products.css.map */

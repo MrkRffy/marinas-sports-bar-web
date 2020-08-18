@@ -17,6 +17,14 @@
     outline: none !important;
 }
 
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 body {
     background: $color-primary;
     font-family: 'Josefin Sans', sans-serif;
@@ -24,11 +32,11 @@ body {
 
 /* HEADER */
 header {
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    background: $color-dark;
 
     .navbar-brand {
         @media (min-width: 992px) {
@@ -45,17 +53,19 @@ header {
     }
 
     .navbar-nav {
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             background: $color-primary;
         }
 
         .navbar-brand-center {
-            @media (max-width: 992px) {
+            @media (max-width: 991px) {
                 display: none;
             }
         }
 
         .nav-item {
+            padding-left: 2vw !important;
+            padding-right: 2vw !important;
 
             &.active .nav-link {
                 border-bottom: 1px solid $color-accent;
@@ -68,13 +78,38 @@ header {
                 color: #fff !important;
                 font-family: 'Open Sans Condensed', sans-serif !important;
             }
+
+            .dropdown-menu {
+                background: $color-primary !important;
+                border: none;
+
+                .dropdown-item {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 300;
+
+                    @media (max-width: 991px) {
+                        text-align: center;
+                    }
+
+                    &.active {
+                        color: $color-accent;
+                        background: none;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                        color: $color-accent;
+                    }
+                }
+            }
         }
     }
 }
 
 /* FOOTER */
 footer {
-    background: #121212;
+    background: $color-dark;
     padding-top: 100px;
     padding-bottom: 100px;
     color: #fff;

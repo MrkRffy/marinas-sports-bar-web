@@ -1,0 +1,38 @@
+@import "./index.scss";
+
+.products-container {
+    background: $color-secondary;
+
+    .product-item {
+        border-radius: 10px;
+        overflow: hidden;
+        background: $color-dark;
+        transition: all .2s ease;
+
+        .product-image {
+            img {
+                height: 250px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .product-info {
+            .product-name {
+                color: #fff;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+
+            .product-price {
+                color: $color-accent;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

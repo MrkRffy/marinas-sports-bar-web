@@ -142,164 +142,60 @@ footer .footer-designed-by a {
   background: #181619;
 }
 
-header {
-  position: absolute;
-  background: transparent;
+.contacts-container {
+  background: linear-gradient(to bottom, #121212 50%, #0F1D22 50%);
 }
-
-.banner-container .carousel .carousel-item {
-  display: flex;
-  align-items: center;
-}
-.banner-container .carousel .carousel-item img {
-  object-fit: cover;
-  min-height: 100vh;
-  max-height: 100vh;
-}
-.banner-container .carousel .carousel-item:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-.banner-container .carousel .carousel-caption {
-  width: 100%;
+.contacts-container .contact-item {
+  background: #181619;
+  box-shadow: 0px 0px 10px rgba(201, 171, 129, 0.1);
+  border-radius: 20px;
   height: 100%;
-  padding: 0px;
-  left: 0;
-  top: 0;
 }
-.banner-container .carousel .carousel-caption .caption-content .caption-header {
-  font-family: "Caviar Dreams Bold", sans-serif;
-  font-size: 50px;
-  letter-spacing: 5px;
-}
-.banner-container .carousel .carousel-caption .caption-content hr {
-  background: #C9AB81;
-  width: 20%;
-  margin: 10px auto;
-}
-.banner-container .carousel .carousel-caption .caption-content p {
-  font-size: 20px;
-}
-.banner-container .carousel .carousel-caption .caption-content p span {
-  margin: 5px;
-}
-.banner-container .carousel .carousel-caption .caption-content p span:nth-child(even) {
+.contacts-container .contact-item .contact-item-name {
   color: #C9AB81;
+  font-size: 18px;
+  font-weight: 800;
+}
+.contacts-container .contact-item .contact-item-value {
+  color: #fff;
+  font-size: 16px;
 }
 
-.about-container,
-.specialties-container,
-.gallery-container {
-  color: #C9AB81;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.contact-form-container {
+  background: #0F1D22;
+  color: #fff;
 }
-.about-container .container-superscript,
-.specialties-container .container-superscript,
-.gallery-container .container-superscript {
+.contact-form-container .row {
+  background: #181619;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contact-form-container input,
+.contact-form-container select,
+.contact-form-container textarea {
+  background: #121212;
+  border: none;
+  color: #fff;
+}
+
+.container-superscript {
   color: #C9AB81;
   font-family: "Miniver", cursive;
   font-size: 19px;
 }
-.about-container .container-title,
-.specialties-container .container-title,
-.gallery-container .container-title {
+
+.container-title {
   font-family: "Caviar Dreams Bold", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: 0.22em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  color: #C9AB81;
 }
-.about-container .container-title.small,
-.specialties-container .container-title.small,
-.gallery-container .container-title.small {
+.container-title.small {
   font-size: 35px;
 }
 
-.about-container {
-  overflow: hidden;
-}
-.about-container .about-content img {
-  object-fit: cover;
-}
-.about-container .about-content hr {
-  background: #C9AB81;
-  width: 20%;
-  margin: 10px auto;
-}
-.about-container .about-content .content-title {
-  font-weight: bold;
-  font-size: 35px;
-}
-.about-container .about-content .content-body .content-image {
-  padding: 15px;
-  border-radius: 100%;
-  border: 2px solid #C9AB81;
-  cursor: help;
-}
-.about-container .about-content .content-body .content-image img {
-  width: 35px;
-}
-.about-container .about-content .content-footer button {
-  background: #C9AB81;
-  font-weight: bold;
-}
-
-.specialties-container {
-  background: #0F1D22;
-  padding-top: 0;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-.specialties-container .carousel .carousel-item img {
-  height: 750px;
-  object-fit: cover;
-}
-.specialties-container .padding-large {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-.specialties-container .container-content {
-  padding: 0px 200px;
-  letter-spacing: 2px;
-  font-size: 19px;
-  font-weight: 300;
-}
-.specialties-container hr {
-  background: #C9AB81;
-  width: 5%;
-  margin: 10px auto;
-}
-.specialties-container .container-footer button {
-  background: transparent;
-  border: 1px solid #C9AB81;
-  color: #fff;
-  font-family: "Open Sans Condensed", sans-serif !important;
-  font-size: 14px;
-  letter-spacing: 4px;
-  transition: color 0.5s, background 0.5s;
-}
-.specialties-container .container-footer button:hover {
-  background: #C9AB81;
-  color: #0F1D22;
-}
-
-.gallery-container {
-  overflow: hidden;
-}
-.gallery-container .container-content img {
-  object-fit: cover;
-}
-.gallery-container .content-footer button {
-  background: #C9AB81;
-  font-weight: bold;
-}
-
-/*# sourceMappingURL=landing.css.map */
+/*# sourceMappingURL=contact.css.map */

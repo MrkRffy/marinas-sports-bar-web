@@ -142,4 +142,22 @@ footer .footer-designed-by a {
   background: #181619;
 }
 
-/*# sourceMappingURL=index.css.map */
+.gallery-container {
+  background: #0F1D22;
+}
+.gallery-container .gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #121212;
+  transition: all 0.2s ease;
+}
+.gallery-container .gallery-item .gallery-image img {
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+.gallery-container .gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=gallery.css.map */
