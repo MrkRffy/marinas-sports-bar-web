@@ -177,6 +177,9 @@ footer .footer-designed-by a {
   border: none;
   color: #fff;
 }
+.contact-form-container .btn {
+  background: #C9AB81;
+}
 
 .container-superscript {
   color: #C9AB81;
